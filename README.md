@@ -1,8 +1,8 @@
-# Team-A
+# The A-Team
 COS 420 - Fall 2023 - Team A Project Repository
 
 <br><br>
-## Team A
+## Team Members
 | Role            | First  | Last     |
 | --------------- | ------ | -------- |
 | Project Manager | Andrew | Bement   |
