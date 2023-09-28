@@ -9,7 +9,8 @@ COS 420 - Fall 2023 - Team A Project Repository
 | Developer       | Kevin  | Menello  |
 | Developer       | Samson | Cournane |
 | Designer        | Samuel | Minor    |
-| Designer        | Tereza    | Holubcova      |
+| Designer        | Tereza | Holubcova      |
+| Designer        | Emily  | Brule    |
 
 <br><br>
 ## Mission Statement
