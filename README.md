@@ -21,3 +21,4 @@ COS 420 - Fall 2023 - Team A Project Repository
 ![Image of Team Schedule](https://github.com/COS420-Fall23/The-A-Team/blob/main/Team%20Meeting%20Schedule.png?raw=true  "Team Schedule") 
 
 
+*The A-Team has decided to not make our repo public at this time, and as such we do not have a wiki associated with the repo. All team documents, scheduling, agendas, etc. are currently stored privately, where the entire team has access to them*
