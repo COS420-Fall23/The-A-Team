@@ -31,7 +31,7 @@ Replies to general questions or discussions on Discord should be made within 24 
 
 ### 2. Using @everyone on Discord:
 
-The @everyone tag should only be used for urgent announcements, significant updates, or when there's a need for input from all team members. Remember, overuse can lead to desensitization.
+The `@everyone` tag should only be used for urgent announcements, significant updates, or when there's a need for input from all team members. Remember, overuse can lead to desensitization.
 
 
 ### 3. Response to Questions on Discord:
