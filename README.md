@@ -17,7 +17,7 @@ COS 420 - Fall 2023 - Team A Project Repository
 
 <br><br>
 
--    [Team Communications Policy](https://github.com/COS420-Fall23/The-A-Team/blob/main/Team%20Wiki/Communications%20Policy.md)
+-    [Team Communications Policy](https://github.com/COS420-Fall23/The-A-Team/blob/main/Team%20Wiki/Communications%20Policy.md) 
 
 
 
