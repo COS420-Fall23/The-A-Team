@@ -1,4 +1,4 @@
-![A-Team Hero Image](https://raw.githubusercontent.com/COS420-Fall23/The-A-Team/c705d1284de41fd5d8260c3eeccc78fece581b88/a-team-banner.png?token=ABLJDUIY5RCMFLOCD7FVCYTFD2GPC)
+![A-Team Hero Image](https://github.com/COS420-Fall23/The-A-Team/blob/main/Team%20Wiki/wiki%20images/a-team-banner.png?raw=true)
 COS 420 - Fall 2023 - Team A Project Repository
 
 <br><br>
