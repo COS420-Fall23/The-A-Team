@@ -1,6 +1,4 @@
 ![A-Team Hero Image](https://raw.githubusercontent.com/COS420-Fall23/The-A-Team/c705d1284de41fd5d8260c3eeccc78fece581b88/a-team-banner.png?token=ABLJDUIY5RCMFLOCD7FVCYTFD2GPC)
-
-# The A-Team
 COS 420 - Fall 2023 - Team A Project Repository
 
 <br><br>
@@ -49,4 +47,4 @@ Zoom: For the agreed-upon 30-minute synchronous working slots.
 JetBrains Spaces: For project management, task allocation, tracking, and document sharing.
 
 --------------------
-*The A-Team has decided to not make our repo public at this time, and as such we do not have a wiki associated with the repo. All team documents, scheduling, agendas, etc. are currently stored privately via Google Docs, JetBrains Spaces, and a shared calendar, where the entire team has access to them*
+*The A-Team has decided to not make our repo public at this time, and as such we do not have a wiki associated with the repo. All team documents, scheduling, agendas, etc. are currently stored privately via Google Docs, JetBrains Spaces, and a shared calendar, where the entire team has access*
