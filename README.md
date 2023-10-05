@@ -3,7 +3,11 @@ COS 420 - Fall 2023 - Team A Project Repository
 
 <br><br>
 
+### Quick Links
 
+-    [Project Management Platform (JetBrains Spaces)](
+     https://bemental.jetbrains.space) 
+-    [Document Management - Team Google Drive](https://drive.google.com/drive/folders/0ADTWU9qo2zXTUk9PVA) 
 
 # Team Members
 
