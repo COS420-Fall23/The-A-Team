@@ -2,6 +2,7 @@
 COS 420 - Fall 2023 - Team A Project Repository
 
 <br><br>
+
 ## Team Members
 | Role            | First  | Last     |
 | --------------- | ------ | -------- |
@@ -20,7 +21,7 @@ COS 420 - Fall 2023 - Team A Project Repository
 
 <br><br>
 ## Team Schedule
-![Image of Team Schedule](https://github.com/COS420-Fall23/The-A-Team/blob/main/Team%20Meeting%20Schedule.png?raw=true  "Team Schedule") 
+![Image of Team Schedule](https://github.com/COS420-Fall23/The-A-Team/blob/main/Team%20Wiki/wiki%20images/Team%20Meeting%20Schedule.png?raw=true) 
 
 <br><br>
 ## Communication Policy
