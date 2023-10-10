@@ -36,6 +36,43 @@ COS 420 - Fall 2023 - Team A Project Repository
 
 ![Image of Team Schedule](https://github.com/COS420-Fall23/The-A-Team/blob/main/Team%20Wiki/wiki%20images/Team%20Meeting%20Schedule.png?raw=true) 
 
+<br>
+
+# Build and locally run web app
+
+In order to run the web app locally, follow these steps.
+
+You can either use vscode to help with this, or just through the standard terminal.
+
+
+Getting the code by cloning through VSCode:
+1. Open a new VSCode window so that you see the start page. 
+2. Locate and click the 'Clone Git Repository' link on the page
+3. Paste in the url of the repository, that being https://github.com/COS420-Fall23/The-A-Team
+4. You can either open in current window or in new, it doesn't matter
+5. Open a new terminal in VSCode by clicking the top three-line menu > Terminal > New Terminal
+6. Continue to the section of install commands
+
+
+Getting the code using a terminal:
+
+Change directory to any prefered location of where you want to locally store the code then procede to run the following commands
+~~~
+git clone https://github.com/COS420-Fall23/The-A-Team
+cd The-A-Team
+~~~
+
+
+Building the code and running locally:
+
+Run the folowing commands in the terminal in the folder The-A-Team
+~~~
+npm install
+npm run start
+~~~
+
+Your web browser should now open, and you may even get a pop-up for firewall settings.
+You should now see the web-app on your screen.
 
 
 <br>
