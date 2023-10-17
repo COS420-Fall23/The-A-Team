@@ -82,7 +82,7 @@ You should now see the web-app on your screen.
 
 ### 1. Discord Timeliness:
 
-Replies to general questions or discussions on Discord should be made within 24 hours. If the message is sent outside of working hours, a reply by the end of the next working day is expected. For urgent matters, use direct messaging.
+Replies to general questions or discussions on Discord should be made within 24 hours. If the message is sent outside of working hours, a reply by the end of the next working day is expected. For urgent matters, use direct messaging, or if needed, reach out by text messaging for immediate contact.
 
 
 ### 2. Using @everyone on Discord:
@@ -99,8 +99,9 @@ If a question is posed and you know the answer or can contribute to the solution
 
 Text/SMS: Reserved for urgent matters or quick updates.
 Phone Calls: For in-depth, immediate discussions or emergencies.
-Zoom: For the agreed-upon 30-minute synchronous working slots.
-JetBrains Spaces: For project management, task allocation, tracking, and document sharing.
+Zoom: For the agreed-upon synchronous working slots, and various scrums/meetings throughout the week.
+JetBrains Spaces: For project management, task allocation, and tracking.
+Google Drive: For document creation and sharing.
 
 
 
