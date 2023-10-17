@@ -9,7 +9,8 @@
 7.    [GitHub Repo](https://github.com/COS420-Fall23/The-A-Team) 
       -    [Team Build Screenshots](https://github.com/COS420-Fall23/The-A-Team/tree/main/Deliverable%201%20Submission/Team%20App%20Build%20Screenshots) 
 8.    [A-Team Project Management System (JetBrains Spaces)](https://bemental.jetbrains.space) 
-      -    [Kanban Progress Photos](https://github.com/COS420-Fall23/The-A-Team/tree/main/Team%20Kanban%20Board%20Updates) 
+      -    [Kanban Progress Photos](https://github.com/COS420-Fall23/The-A-Team/tree/main/Team%20Kanban%20Board%20Updates)
+      -    
 
 
 
