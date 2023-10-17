@@ -1,15 +1,17 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import "./App.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
 //import { User } from "./interfaces/User.js";
 
-function WelcomePage(user): JSX.Element {
+function WelcomePage(props): JSX.Element {
     return (
         <div className="App">
             <header className="App-header">
                 Welcome to the something something WebApp
             </header>
-            <h2>You are user {user.username}</h2>
+            <h2>You are user {props.user.username}</h2>
+            <Button onClick={() => props.onLogout()}>Logout</Button>
             <p>
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload.
