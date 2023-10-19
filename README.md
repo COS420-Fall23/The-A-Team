@@ -57,7 +57,7 @@ Getting the code by cloning through VSCode:
 
 Getting the code using a terminal:
 
-Change directory to any prefered location of where you want to locally store the code then procede to run the following commands
+Change the directory to any preferred location where you want to locally store the code, then procede to run the following commands
 ~~~
 git clone https://github.com/COS420-Fall23/The-A-Team
 cd The-A-Team/App/
@@ -66,14 +66,14 @@ cd The-A-Team/App/
 
 Building the code and running locally:
 
-Run the folowing commands in the terminal in the folder The-A-Team
+Run the following commands in the terminal in the folder The-A-Team
 ~~~
 npm install
 npm run start
 ~~~
 
 Your web browser should now open, and you may even get a pop-up for firewall settings.
-You should now see the web-app on your screen.
+You should now see the web app on your screen.
 
 
 <br>
@@ -106,4 +106,4 @@ Google Drive: For document creation and sharing.
 
 
 --------------------
-*The A-Team has decided to not make our repo public at this time, and as such we do not have a wiki associated with the repo. All team documents, scheduling, agendas, etc. are currently stored privately via Google Docs, JetBrains Spaces, and a shared calendar, where the entire team has access*
+*The A-Team has decided to not make our repo public at this time, and as such, we do not have a wiki associated with the repo. All team documents, scheduling, agendas, etc., are currently stored privately via Google Docs, JetBrains Spaces, and a shared calendar, where the entire team has access*
