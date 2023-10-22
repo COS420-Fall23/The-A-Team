@@ -2,6 +2,7 @@
 import React from "react";
 import "./App.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import LoginPanel from "./components/LoginPanel.tsx";
 //import { User } from "./interfaces/User.js";
 
 function WelcomePage(props): JSX.Element {
@@ -10,8 +11,15 @@ function WelcomePage(props): JSX.Element {
             <header className="App-header">
                 Welcome to the something something WebApp
             </header>
-            <h2>You are user {props.user.username}</h2>
-            <Button onClick={() => props.onLogout()}>Logout</Button>
+            {
+                <div>
+                    <LoginPanel
+                        cookies={props.cookies}
+                        setCookie={props.setCookie}
+                        removeCookie={props.removeCookie}
+                    />
+                </div>
+            }
             <p>
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload.

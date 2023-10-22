@@ -72,6 +72,13 @@ npm install
 npm run start
 ~~~
 
+You usually only ever need to run npm install once, and just use 
+~~~
+npm run start
+~~~
+whenever you want to run the web app.
+However, a dependency was added on 10-22-2023, so you will need to re-run the 'npm install' command if you last installed before that date.
+
 Your web browser should now open, and you may even get a pop-up for firewall settings.
 You should now see the web app on your screen.
 
