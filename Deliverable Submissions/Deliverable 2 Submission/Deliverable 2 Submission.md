@@ -11,8 +11,3 @@
 7.    [Architectural Design Specification](https://docs.google.com/document/d/1ZvaReG9MMKDv57G5W7PK3SSKtc9Opg1J5jKssuVKim8/edit) 
 8.    [Use Case Diagrams and Descriptions](https://docs.google.com/document/d/1HVZJPOMEdF5vOeHxHVoEccG2ijHisyy4y0z5xDaOSBI/edit?usp=sharing)
 9.    [New Version of the Application](https://github.com/COS420-Fall23/The-A-Team/tree/main/App) 
-
-
-
-
-
