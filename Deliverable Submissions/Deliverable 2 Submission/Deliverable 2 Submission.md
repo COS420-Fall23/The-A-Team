@@ -6,7 +6,7 @@
 4.    Kanban Board
       	- [Kanban Progress Photos](https://github.com/COS420-Fall23/The-A-Team/tree/main/Deliverable%20Submissions/Team%20Kanban%20Board%20Updates/Deliverable%202%20Sprint)
       	- [A-Team Project Management System (JetBrains Spaces)](https://bemental.jetbrains.space) 
-5.    [Sprint Review](https://docs.google.com/document/d/1sEG4tHyaM308Pf25dQfIqN7FTaIKvIIHpUIT_Ac5u9Y/edit)
+5.    [Sprint Review](https://docs.google.com/document/d/19RdqCek5BAVp5s-bPqRss-IbP4obpr3v/edit#heading=h.2jxsxqh)
 6.    [SRS Document](https://docs.google.com/document/d/19RdqCek5BAVp5s-bPqRss-IbP4obpr3v/edit)
 7.    [Architectural Design Specification](https://docs.google.com/document/d/1ZvaReG9MMKDv57G5W7PK3SSKtc9Opg1J5jKssuVKim8/edit) 
 8.    [Use Case Diagrams and Descriptions](https://docs.google.com/document/d/1HVZJPOMEdF5vOeHxHVoEccG2ijHisyy4y0z5xDaOSBI/edit?usp=sharing)
