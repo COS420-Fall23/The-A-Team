@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { CookiesProvider } from "react-cookie";
 import { User } from "../interfaces/User.ts";
 import { Button } from "react-bootstrap";
+import "../App.css";
 // eslint-disable-next-line react/prop-types
 function LoginPanel(props) {
     const [username, setUsername] = useState("");
@@ -23,7 +24,7 @@ function LoginPanel(props) {
 
     return (
         <CookiesProvider>
-            <div>
+            <div id="loginBox">
                 {props.cookies.user ? (
                     <div>
                         <h2>You are user {props.cookies.user.username}</h2>
@@ -37,9 +38,11 @@ function LoginPanel(props) {
                 ) : (
                     <div>
                         <form onSubmit={handleSubmit}>
-                            <label>
+                            <h2>Sign Up</h2>
+                            <label className="input-label">
                                 Username:
                                 <input
+                                    className="input-field"
                                     data-testid="usernameInputField"
                                     type="text"
                                     value={username}
@@ -49,9 +52,10 @@ function LoginPanel(props) {
                                 />
                             </label>
                             <br />
-                            <label>
+                            <label className="input-label">
                                 Password:
                                 <input
+                                    className="input-field"
                                     data-testid="passwordInputField"
                                     type="password"
                                     value={password}
@@ -62,6 +66,7 @@ function LoginPanel(props) {
                             </label>
                             <br />
                             <input
+                                id="submit-button"
                                 data-testid="loginSubmitButton"
                                 type="submit"
                                 value="Submit"

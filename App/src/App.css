@@ -37,3 +37,45 @@
         transform: rotate(360deg);
     }
 }
+
+.input-label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.input-field{
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+#submit-button{
+    width:50%;
+    height: 2.5em;
+    border-radius: 0.5em;
+    background-color: #61dafb;
+}
+
+#submit-button:hover{
+    background-color: #282c34;
+    color: #61dafb;
+}
+
+#loginBox{
+    /*padding*/
+    padding: 20px;
+    /*width*/
+    width: 60%;
+    /*text align center*/
+    text-align: center;
+    margin: auto;
+}
+
+#windowsWallpaper{
+    width: 100%;
+}

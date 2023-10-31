@@ -28,8 +28,6 @@ function WelcomePage(props): JSX.Element {
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload.
             </p>
-            <p>Hello World! This is my page.</p>
-            <p>Edited by: Kevin Menenello</p>
             <NewPostBox
                 postsOnScreen={postsOnScreen}
                 setPostsOnScreen={setPostsOnScreen}
@@ -38,6 +36,7 @@ function WelcomePage(props): JSX.Element {
             <div>
                 <p>Here, take this cool Windows wallpaper</p>
                 <img
+                    id="windowsWallpaper"
                     src={require("./assets/images/LockScreen_533edc733b885d0e1188f320562b68b577c84658b6bcd3b33b729493209ae815.jpg")}
                     alt="A Windows Wallpaper of waterside houses that looks nice. attempt 15"
                 />
