@@ -1,11 +1,15 @@
 /* eslint-disable react/prop-types */
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import LoginPanel from "./components/LoginPanel.tsx";
 //import { User } from "./interfaces/User.js";
+import NewPostBox from "./components/NewPostBox.tsx";
+//import PostList from "./components/PostList.tsx";
 
 function WelcomePage(props): JSX.Element {
+    const [postsOnScreen, setPostsOnScreen] = useState([]);
+
     return (
         <div className="App">
             <header className="App-header">
@@ -26,43 +30,11 @@ function WelcomePage(props): JSX.Element {
             </p>
             <p>Hello World! This is my page.</p>
             <p>Edited by: Kevin Menenello</p>
-            <div>
-                <Container>
-                    <Row>
-                        <Col>
-                            <p>
-                                As of writing this line, I have three things
-                                left to do
-                            </p>
-                            <ol>
-                                <li>A button to log &quot;hello world&quot;</li>
-                                <li>A two column layout</li>
-                                <li>Put red rectangles in each column</li>
-                                <div
-                                    style={{
-                                        backgroundColor: "red",
-                                        width: "50px",
-                                        height: "100px"
-                                    }}
-                                />
-                            </ol>
-                        </Col>
-                        <Col>
-                            <p>This is the button I was talking about</p>
-                            <Button onClick={() => console.log("Hello World!")}>
-                                Log Hello World
-                            </Button>
-                            <div
-                                style={{
-                                    backgroundColor: "red",
-                                    width: "225px",
-                                    height: "75px"
-                                }}
-                            />
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+            <NewPostBox
+                postsOnScreen={postsOnScreen}
+                setPostsOnScreen={setPostsOnScreen}
+            ></NewPostBox>
+            {/*<PostsList postsOnScreen={postsOnScreen}></PostsList>*/}
             <div>
                 <p>Here, take this cool Windows wallpaper</p>
                 <img
