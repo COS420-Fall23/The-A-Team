@@ -18,17 +18,26 @@ function NewPostBox(props) {
     return (
         <div>
             {!writingNewPost ? (
-                <Button onClick={() => setWritingNewPost(true)}>
+                <Button
+                    data-testid="startNewPostButton"
+                    onClick={() => setWritingNewPost(true)}
+                >
                     Start new post
                 </Button>
             ) : (
                 <div>
                     <input
+                        data-testid="newPostTextBox"
                         type="text"
                         size={50}
                         onChange={(e) => setNewPostText(e.target.value)}
                     />
-                    <Button onClick={() => publishPost()}>Publish</Button>
+                    <Button
+                        data-testid="newPostSubmitButton"
+                        onClick={() => publishPost()}
+                    >
+                        Publish
+                    </Button>
                 </div>
             )}
         </div>
