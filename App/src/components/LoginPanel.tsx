@@ -28,7 +28,7 @@ function LoginPanel(props) {
                     <div>
                         <h2>You are user {props.cookies.user.username}</h2>
                         <Button
-                            data-testId="logoutButton"
+                            data-testid="logoutButton"
                             onClick={() => handleLogout()}
                         >
                             Logout
@@ -40,7 +40,7 @@ function LoginPanel(props) {
                             <label>
                                 Username:
                                 <input
-                                    data-testId="usernameInputField"
+                                    data-testid="usernameInputField"
                                     type="text"
                                     value={username}
                                     onChange={(e) =>
@@ -52,7 +52,7 @@ function LoginPanel(props) {
                             <label>
                                 Password:
                                 <input
-                                    data-testId="passwordInputField"
+                                    data-testid="passwordInputField"
                                     type="password"
                                     value={password}
                                     onChange={(e) =>
@@ -62,7 +62,7 @@ function LoginPanel(props) {
                             </label>
                             <br />
                             <input
-                                data-testId="loginSubmitButton"
+                                data-testid="loginSubmitButton"
                                 type="submit"
                                 value="Submit"
                             />
