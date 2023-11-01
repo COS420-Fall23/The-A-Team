@@ -13,7 +13,7 @@ function App() {
             cookies={cookies}
             setCookie={setCookie}
             removeCookie={removeCookie}
-        />
+        ></WelcomePage>
     );
 }
 
