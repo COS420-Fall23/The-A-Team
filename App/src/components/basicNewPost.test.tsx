@@ -19,6 +19,16 @@ test("Pressing Login button logs in the user", () => {
     expect(loggedInButton).toBeInTheDocument();
 });
 
+test("There is a create feedback button", () => {
+    const feedButton = screen.getByRole("button", {
+        name: /Start new post/i 
+    });
+    expect(feedButton).toBeInTheDocument();
+});
+
+
+
+
 
 
 
