@@ -71,6 +71,7 @@ function LoginPanel(props) {
                                 type="submit"
                                 value="Submit"
                             />
+                            <p>Sign in</p>
                         </form>
                     </div>
                 )}
