@@ -4,6 +4,8 @@ import { CookiesProvider } from "react-cookie";
 import { User } from "../interfaces/User.ts";
 import { Button } from "react-bootstrap";
 import "../App.css";
+import Help from "./Help.tsx";
+import Profile from "./Profile.tsx";
 // eslint-disable-next-line react/prop-types
 function LoginPanel(props) {
     const [username, setUsername] = useState("");
@@ -26,15 +28,17 @@ function LoginPanel(props) {
         <CookiesProvider>
             <div id="loginBox">
                 {props.cookies.user ? (
-                    <div>
-                        <h2>You are user {props.cookies.user.username}</h2>
-                        <Button
-                            data-testid="logoutButton"
-                            onClick={() => handleLogout()}
-                        >
-                            Logout
-                        </Button>
-                    </div>
+                    <>
+                        <div>
+                            <h2>You are user {props.cookies.user.username}</h2>
+                            <Button
+                                data-testid="logoutButton"
+                                onClick={() => handleLogout()}
+                            >
+                                Logout
+                            </Button>
+                        </div>
+                    </>
                 ) : (
                     <div>
                         <form onSubmit={handleSubmit}>
@@ -76,6 +80,16 @@ function LoginPanel(props) {
                     </div>
                 )}
             </div>
+            {props.cookies.user && (
+                <div id="help">
+                    <Help></Help>
+                    <Profile
+                        name={props.cookies.user.username}
+                        bio={""}
+                        avatarUrl={""}
+                    ></Profile>
+                </div>
+            )}
         </CookiesProvider>
     );
 }
