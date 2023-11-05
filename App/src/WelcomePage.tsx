@@ -6,6 +6,7 @@ import LoginPanel from "./components/LoginPanel.tsx";
 //import { User } from "./interfaces/User.js";
 import NewPostBox from "./components/NewPostBox.tsx";
 //import PostList from "./components/PostList.tsx";
+import PostsBox from "./components/PostsBox.tsx";
 
 function WelcomePage(props): JSX.Element {
     const [postsOnScreen, setPostsOnScreen] = useState([]);
@@ -30,6 +31,7 @@ function WelcomePage(props): JSX.Element {
                 setPostsOnScreen={setPostsOnScreen}
             ></NewPostBox>
             {/*<PostsList postsOnScreen={postsOnScreen}></PostsList>*/}
+            <PostsBox postsOnScreen={postsOnScreen}></PostsBox>
         </div>
     );
 }
