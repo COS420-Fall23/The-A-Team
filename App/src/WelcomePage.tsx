@@ -12,9 +12,6 @@ function WelcomePage(props): JSX.Element {
 
     return (
         <div className="App">
-            <header className="App-header">
-                Welcome to the something something WebApp
-            </header>
             {
                 <div>
                     <LoginPanel
@@ -33,14 +30,6 @@ function WelcomePage(props): JSX.Element {
                 setPostsOnScreen={setPostsOnScreen}
             ></NewPostBox>
             {/*<PostsList postsOnScreen={postsOnScreen}></PostsList>*/}
-            <div>
-                <p>Here, take this cool Windows wallpaper</p>
-                <img
-                    id="windowsWallpaper"
-                    src={require("./assets/images/LockScreen_533edc733b885d0e1188f320562b68b577c84658b6bcd3b33b729493209ae815.jpg")}
-                    alt="A Windows Wallpaper of waterside houses that looks nice. attempt 15"
-                />
-            </div>
         </div>
     );
 }
