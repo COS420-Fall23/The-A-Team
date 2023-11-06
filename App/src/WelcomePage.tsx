@@ -6,15 +6,13 @@ import LoginPanel from "./components/LoginPanel.tsx";
 //import { User } from "./interfaces/User.js";
 import NewPostBox from "./components/NewPostBox.tsx";
 //import PostList from "./components/PostList.tsx";
+import PostsBox from "./components/PostsBox.tsx";
 
 function WelcomePage(props): JSX.Element {
     const [postsOnScreen, setPostsOnScreen] = useState([]);
 
     return (
         <div className="App">
-            <header className="App-header">
-                Welcome to the something something WebApp
-            </header>
             {
                 <div>
                     <LoginPanel
@@ -28,20 +26,12 @@ function WelcomePage(props): JSX.Element {
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload.
             </p>
-            <p>Hello World! This is my page.</p>
-            <p>Edited by: Kevin Menenello</p>
             <NewPostBox
                 postsOnScreen={postsOnScreen}
                 setPostsOnScreen={setPostsOnScreen}
             ></NewPostBox>
             {/*<PostsList postsOnScreen={postsOnScreen}></PostsList>*/}
-            <div>
-                <p>Here, take this cool Windows wallpaper</p>
-                <img
-                    src={require("./assets/images/LockScreen_533edc733b885d0e1188f320562b68b577c84658b6bcd3b33b729493209ae815.jpg")}
-                    alt="A Windows Wallpaper of waterside houses that looks nice. attempt 15"
-                />
-            </div>
+            <PostsBox postsOnScreen={postsOnScreen}></PostsBox>
         </div>
     );
 }
