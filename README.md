@@ -7,7 +7,8 @@ COS 420 - Fall 2023 - Team A Project Repository
 
 -    [Project Management Platform (JetBrains Spaces)](
      https://bemental.jetbrains.space) 
--    [Document Management - Team Google Drive](https://drive.google.com/drive/folders/0ADTWU9qo2zXTUk9PVA) 
+-    [Document Management - Team Google Drive](https://drive.google.com/drive/folders/0ADTWU9qo2zXTUk9PVA)
+-    [Project Mockups](https://miro.com/app/board/uXjVNY9FHAw=/)
 
 <br><br>
 
@@ -62,7 +63,6 @@ Change the directory to any preferred location where you want to locally store t
 git clone https://github.com/COS420-Fall23/The-A-Team
 cd The-A-Team/App/
 ~~~
-
 
 Building the code and running locally:
 

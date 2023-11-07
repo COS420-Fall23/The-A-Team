@@ -6,6 +6,7 @@ import { Button } from "react-bootstrap";
 import "../App.css";
 import Help from "./Help.tsx";
 import Profile from "./Profile.tsx";
+import CourseSearchPanel from "./CourseSearchPanel.tsx";
 // eslint-disable-next-line react/prop-types
 function LoginPanel(props) {
     const [username, setUsername] = useState("");
@@ -68,6 +69,22 @@ function LoginPanel(props) {
                                     }
                                 />
                             </label>
+                            <label className="input-label">
+                                First Name:
+                                <input
+                                    className="input-field"
+                                    data-testid="firstNameInputField"
+                                    type="text"
+                                ></input>
+                            </label>
+                            <label className="input-label">
+                                Last Name:
+                                <input
+                                    className="input-field"
+                                    data-testid="lastNameInputField"
+                                    type="text"
+                                ></input>
+                            </label>
                             <br />
                             <input
                                 id="submit-button"
@@ -83,11 +100,8 @@ function LoginPanel(props) {
             {props.cookies.user && (
                 <div id="help">
                     <Help></Help>
-                    <Profile
-                        name={props.cookies.user.username}
-                        bio={""}
-                        avatarUrl={""}
-                    ></Profile>
+                    <Profile name={props.cookies.user.username}></Profile>
+                    <CourseSearchPanel></CourseSearchPanel>
                 </div>
             )}
         </CookiesProvider>
