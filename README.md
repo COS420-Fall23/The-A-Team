@@ -64,7 +64,6 @@ git clone https://github.com/COS420-Fall23/The-A-Team
 cd The-A-Team/App/
 ~~~
 
-
 Building the code and running locally:
 
 Run the following commands in the terminal in the folder The-A-Team
