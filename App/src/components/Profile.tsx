@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from "react";
+import { useCookies } from "react-cookie";
+import "../App.css";
 
 interface Props {
     name: string;
 }
 
 const Profile: React.FC<Props> = ({ name }) => {
+    const [cookies, setCookie] = useCookies(["emoji", "color"]);
     const [emoji, setEmoji] = useState("");
     const [color, setColor] = useState("");
+    const [isAnonymous, setIsAnonymous] = useState(true);
 
     const getRandomColor = () => {
         const letters = "0123456789ABCDEF";
@@ -25,14 +29,28 @@ const Profile: React.FC<Props> = ({ name }) => {
     };
 
     useEffect(() => {
-        const randomEmoji = getRandomEmoji();
-        const randomColor = getRandomColor();
-        setEmoji(randomEmoji);
-        setColor(randomColor);
-    }, []);
+        let storedEmoji = cookies.emoji;
+        let storedColor = cookies.color;
+
+        if (!storedEmoji) {
+            storedEmoji = getRandomEmoji();
+            setCookie("emoji", storedEmoji, { path: "/" });
+        }
+
+        if (!storedColor) {
+            storedColor = getRandomColor();
+            setCookie("color", storedColor, { path: "/" });
+        }
+
+        setEmoji(storedEmoji);
+        setColor(storedColor);
+    }, [cookies, setCookie]);
 
     return (
-        <div>
+        <div id="profile">
+            <h2>
+                {isAnonymous ? "You are anonymous" : "You are not anonymous"}
+            </h2>
             <div
                 style={{
                     backgroundColor: color,
@@ -40,15 +58,42 @@ const Profile: React.FC<Props> = ({ name }) => {
                     width: "2em",
                     height: "2em",
                     display: "flex",
-                    justifyContent: "center",
                     alignItems: "center",
-                    borderRadius: "50%",
-                    margin: "auto"
+                    justifyContent: "center",
+                    margin: "auto",
+                    borderRadius: "50%"
                 }}
             >
                 {emoji}
             </div>
             <h1>{name}</h1>
+            <button
+                onClick={() => {
+                    const newEmoji = getRandomEmoji();
+                    const newColor = getRandomColor();
+                    setCookie("emoji", newEmoji, { path: "/" });
+                    setCookie("color", newColor, { path: "/" });
+                    setEmoji(newEmoji);
+                    setColor(newColor);
+                }}
+            >
+                Randomize Avatar
+            </button>
+            <br />
+            <select name="language" id="language">
+                <option value="student">Student</option>
+                <option value="professor">Professor</option>
+                <option value="alumni">Alumni</option>
+                <option value="other">Other</option>
+            </select>
+            <input
+                type="checkbox"
+                id="anonymous"
+                name="anonymous"
+                onChange={() => setIsAnonymous(!isAnonymous)}
+                checked={isAnonymous}
+            />
+            <label htmlFor="anonymous">Anonymous</label>
         </div>
     );
 };

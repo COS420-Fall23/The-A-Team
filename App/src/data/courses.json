@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Intro to Blah",
+        "subject": "Mathematics",
+        "number": "MATH101",
+        "professor": "Prof. A"
+    },
+    {
+        "name": "Intro to Something",
+        "subject": "Physics",
+        "number": "PHYS101",
+        "professor": "Prof. B"
+    },
+    {
+        "name": "Chem Class",
+        "subject": "Chemistry",
+        "number": "CHEM101",
+        "professor": "Prof. C"
+    },
+    {
+        "name": "Bio is Fun",
+        "subject": "Biology",
+        "number": "BIOL101",
+        "professor": "Prof. D"
+    },
+    {
+        "name": "CS is the Best",
+        "subject": "Computer Science",
+        "number": "CS101",
+        "professor": "Prof. E"
+    },
+    {
+        "name": "English is Cool",
+        "subject": "English",
+        "number": "ENG101",
+        "professor": "Prof. F"
+    },
+    {
+        "name": "History Class 101",
+        "subject": "History",
+        "number": "HIST101",
+        "professor": "Prof. G"
+    },
+    {
+        "name": "Course 8",
+        "subject": "Geography",
+        "number": "GEOG101",
+        "professor": "Prof. H"
+    },
+    {
+        "name": "Course 9",
+        "subject": "Music",
+        "number": "MUS101",
+        "professor": "Prof. I"
+    },
+    {
+        "name": "Course 10",
+        "subject": "Art",
+        "number": "ART101",
+        "professor": "Prof. J"
+    }
+]
