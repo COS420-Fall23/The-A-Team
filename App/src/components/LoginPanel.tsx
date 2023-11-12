@@ -101,7 +101,6 @@ function LoginPanel(props) {
                 <div id="help">
                     <Help></Help>
                     <Profile name={props.cookies.user.username}></Profile>
-                    <CourseSearchPanel></CourseSearchPanel>
                 </div>
             )}
         </CookiesProvider>
