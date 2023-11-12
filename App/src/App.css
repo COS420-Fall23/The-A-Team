@@ -281,3 +281,13 @@ body{
     border-radius: 4px;
     z-index: 0;
 }
+#num-courses{
+  background-color: /*light grey*/ #d3d3d3;
+  border-radius: 0.5em;
+  font-size: 2.5em;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bolder;
+  width: fit-content;
+  padding:0.5em;
+}
