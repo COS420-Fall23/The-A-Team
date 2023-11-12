@@ -13,8 +13,6 @@ const Profile: React.FC<Props> = ({ name }) => {
     const [color, setColor] = useState("");
     const [isAnonymous, setIsAnonymous] = useState(true);
     const [selectedCourses, setSelectedCourses] = useState<string[]>([]);
-<<<<<<< Updated upstream
-=======
 
     const addCourse = (course) => {
         if (!selectedCourses.includes(course)) {
@@ -23,7 +21,6 @@ const Profile: React.FC<Props> = ({ name }) => {
             console.log("This course has already been selected.");
         }
     };
->>>>>>> Stashed changes
 
     const getRandomColor = () => {
         const letters = "0123456789ABCDEF";
@@ -68,10 +65,7 @@ const Profile: React.FC<Props> = ({ name }) => {
             <CourseSearchPanel onCourseClick={handleCourseClick} />
             <div>
                 <h2>Selected Courses:</h2>
-<<<<<<< Updated upstream
-=======
                 <div id="num-courses">{selectedCourses.length}</div>
->>>>>>> Stashed changes
                 {selectedCourses.map((course, index) => (
                     <p key={index}>{course}</p>
                 ))}
