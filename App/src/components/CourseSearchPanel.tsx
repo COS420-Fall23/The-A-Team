@@ -12,10 +12,14 @@ interface Course {
 
 interface CourseSearchPanelProps {
     defaultSearchBy?: "name" | "subject" | "number" | "professor";
+    onCourseClick?: (courseName: string) => void;
 }
 
 const CourseSearchPanel: React.FC<CourseSearchPanelProps> = ({
-    defaultSearchBy = "name"
+    defaultSearchBy = "name",
+    onCourseClick = (courseName) => {
+        console.log(`Course ${courseName} was clicked.`);
+    }
 }) => {
     const [searchTerm, setSearchTerm] = useState("");
     const [searchOption, setSearchOption] = useState(defaultSearchBy);
@@ -71,7 +75,11 @@ const CourseSearchPanel: React.FC<CourseSearchPanelProps> = ({
             </div>
             <div className="search-results">
                 {searchResults.map((course, index) => (
-                    <div key={index} className="course-result">
+                    <div
+                        key={index}
+                        className="course-result"
+                        onClick={() => onCourseClick(course.name)}
+                    >
                         <h2>
                             {course.number} - {course.name}
                         </h2>
