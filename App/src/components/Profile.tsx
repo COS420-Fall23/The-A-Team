@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useCookies } from "react-cookie";
 import "../App.css";
+import CourseSearchPanel from "./CourseSearchPanel";
 
 interface Props {
     name: string;
@@ -11,6 +12,15 @@ const Profile: React.FC<Props> = ({ name }) => {
     const [emoji, setEmoji] = useState("");
     const [color, setColor] = useState("");
     const [isAnonymous, setIsAnonymous] = useState(true);
+    const [selectedCourses, setSelectedCourses] = useState<string[]>([]);
+
+    const addCourse = (course) => {
+        if (!selectedCourses.includes(course)) {
+            setSelectedCourses([...selectedCourses, course]);
+        } else {
+            console.log("This course has already been selected.");
+        }
+    };
 
     const getRandomColor = () => {
         const letters = "0123456789ABCDEF";
@@ -19,6 +29,10 @@ const Profile: React.FC<Props> = ({ name }) => {
             color += letters[Math.floor(Math.random() * 16)];
         }
         return color;
+    };
+
+    const handleCourseClick = (courseName: string) => {
+        setSelectedCourses((prevCourses) => [...prevCourses, courseName]);
     };
 
     const getRandomEmoji = () => {
@@ -48,6 +62,14 @@ const Profile: React.FC<Props> = ({ name }) => {
 
     return (
         <div id="profile">
+            <CourseSearchPanel onCourseClick={handleCourseClick} />
+            <div>
+                <h2>Selected Courses:</h2>
+                <div id="num-courses">{selectedCourses.length}</div>
+                {selectedCourses.map((course, index) => (
+                    <p key={index}>{course}</p>
+                ))}
+            </div>
             <h2>
                 {isAnonymous ? "You are anonymous" : "You are not anonymous"}
             </h2>
