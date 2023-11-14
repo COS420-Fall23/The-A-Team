@@ -53,7 +53,7 @@ Getting the code by cloning through VSCode:
 4. You can either open in current window or in new, it doesn't matter
 5. Open a new terminal in VSCode by clicking the top three-line menu > Terminal > New Terminal
 6. run the command 'cd App'
-7. Continue to the section of install commands
+7. Continue to the section of install commands.
 
 
 Getting the code using a terminal:
