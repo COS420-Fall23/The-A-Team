@@ -112,4 +112,4 @@ Google Drive: For document creation and sharing.
 
 
 --------------------
-*The A-Team has decided to not make our repo public at this time, and as such, we do not have a wiki associated with the repo. All team documents, scheduling, agendas, etc., are currently stored privately via Google Docs, JetBrains Spaces, and a shared calendar, where the entire team has access*
+💩
