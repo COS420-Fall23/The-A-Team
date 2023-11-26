@@ -13,6 +13,8 @@ function PostsBox(props) {
                     <ADrawnPost
                         drawnPost={post}
                         username={props.cookies.user.username}
+                        anon={props.anon}
+                        cookies={props.cookies}
                     />
                 </ul>
                 /*
