@@ -27,6 +27,7 @@ function WelcomePage(props): JSX.Element {
                 automatically reload.
             </p>
             <NewPostBox
+                cookies={props.cookies}
                 postsOnScreen={postsOnScreen}
                 setPostsOnScreen={setPostsOnScreen}
             ></NewPostBox>
