@@ -7,7 +7,7 @@ function PostsBox(props) {
     return (
         <div>
             <strong>Posts:</strong>
-            {props.postsOnScreen.map((post: APost) => (
+            {props.postsOnScreen.map((post: APost, index: number) => (
                 // eslint-disable-next-line react/jsx-key
                 <ul>
                     <ADrawnPost
@@ -15,6 +15,10 @@ function PostsBox(props) {
                         username={props.cookies.user.username}
                         anon={props.anon}
                         cookies={props.cookies}
+                        index={index}
+                        setAPost={props.setAPost}
+                        postsOnScreen={props.postsOnScreen}
+                        setPostsOnScreen={props.setPostsOnScreen}
                     />
                 </ul>
                 /*
