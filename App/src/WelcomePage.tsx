@@ -36,7 +36,10 @@ function WelcomePage(props): JSX.Element {
                 setPostsOnScreen={setPostsOnScreen}
             ></NewPostBox>
             {/*<PostsList postsOnScreen={postsOnScreen}></PostsList>*/}
-            <PostsBox postsOnScreen={postsOnScreen}></PostsBox>
+            <PostsBox
+                postsOnScreen={postsOnScreen}
+                cookies={props.cookies}
+            ></PostsBox>
         </div>
     );
 }
