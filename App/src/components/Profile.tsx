@@ -5,13 +5,14 @@ import CourseSearchPanel from "./CourseSearchPanel";
 
 interface Props {
     name: string;
+    anonMode: boolean;
+    setAnonMode: (boolean) => void;
 }
 
-const Profile: React.FC<Props> = ({ name }) => {
+const Profile: React.FC<Props> = ({ name, anonMode, setAnonMode }) => {
     const [cookies, setCookie] = useCookies(["emoji", "color"]);
     const [emoji, setEmoji] = useState("");
     const [color, setColor] = useState("");
-    const [isAnonymous, setIsAnonymous] = useState(true);
     const [selectedCourses, setSelectedCourses] = useState<string[]>([]);
 
     const addCourse = (course) => {
@@ -70,9 +71,7 @@ const Profile: React.FC<Props> = ({ name }) => {
                     <p key={index}>{course}</p>
                 ))}
             </div>
-            <h2>
-                {isAnonymous ? "You are anonymous" : "You are not anonymous"}
-            </h2>
+            <h2>{anonMode ? "You are anonymous" : "You are not anonymous"}</h2>
             <div
                 style={{
                     backgroundColor: color,
@@ -112,8 +111,8 @@ const Profile: React.FC<Props> = ({ name }) => {
                 type="checkbox"
                 id="anonymous"
                 name="anonymous"
-                onChange={() => setIsAnonymous(!isAnonymous)}
-                checked={isAnonymous}
+                onChange={() => setAnonMode(!anonMode)}
+                checked={anonMode}
             />
             <label htmlFor="anonymous">Anonymous</label>
         </div>

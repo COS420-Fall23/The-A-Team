@@ -14,7 +14,7 @@ function NewPostBox(props) {
         // We would use the cookie's user token and send it into the backend
 
         const newPost: APost = {
-            author: props.cookies.user.username,
+            author: props.anon ? "BananaMan" : props.cookies.user.username,
             course: newPostClass,
             title: newPostTitle,
             body: newPostText

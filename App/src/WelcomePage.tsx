@@ -10,12 +10,15 @@ import PostsBox from "./components/PostsBox.tsx";
 
 function WelcomePage(props): JSX.Element {
     const [postsOnScreen, setPostsOnScreen] = useState([]);
+    const [anonMode, setAnonMode] = useState(false);
 
     return (
         <div className="App">
             {
                 <div>
                     <LoginPanel
+                        anonMode={anonMode}
+                        setAnonMode={setAnonMode}
                         cookies={props.cookies}
                         setCookie={props.setCookie}
                         removeCookie={props.removeCookie}
@@ -27,6 +30,7 @@ function WelcomePage(props): JSX.Element {
                 automatically reload.
             </p>
             <NewPostBox
+                anon={anonMode}
                 cookies={props.cookies}
                 postsOnScreen={postsOnScreen}
                 setPostsOnScreen={setPostsOnScreen}
