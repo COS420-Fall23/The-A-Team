@@ -47,7 +47,12 @@ function ADrawnPost(props) {
                         <Button
                             onClick={() => {
                                 setEditingPost(false);
-                                props.drawnPost = listForEditedPost[0];
+                                props.setAPost(
+                                    props.postsOnScreen,
+                                    props.setPostsOnScreen,
+                                    listForEditedPost[0],
+                                    props.index
+                                );
                                 setListforEditedPost([]);
                             }}
                         >

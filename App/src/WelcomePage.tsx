@@ -7,6 +7,17 @@ import LoginPanel from "./components/LoginPanel.tsx";
 import NewPostBox from "./components/NewPostBox.tsx";
 //import PostList from "./components/PostList.tsx";
 import PostsBox from "./components/PostsBox.tsx";
+import { APost } from "./interfaces/APost.ts";
+
+function SetAPost(
+    postsOnScreen: APost[],
+    setPostsOnScreen,
+    newPost: APost,
+    index: number
+) {
+    const newPostArray = postsOnScreen.splice(index, 1, newPost);
+    setPostsOnScreen(newPostArray);
+}
 
 function WelcomePage(props): JSX.Element {
     const [postsOnScreen, setPostsOnScreen] = useState([]);
@@ -38,7 +49,10 @@ function WelcomePage(props): JSX.Element {
             {/*<PostsList postsOnScreen={postsOnScreen}></PostsList>*/}
             <PostsBox
                 postsOnScreen={postsOnScreen}
+                setPostsOnScreen={setPostsOnScreen}
                 cookies={props.cookies}
+                anon={anonMode}
+                setAPost={SetAPost}
             ></PostsBox>
         </div>
     );
