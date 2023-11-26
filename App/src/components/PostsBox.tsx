@@ -10,7 +10,10 @@ function PostsBox(props) {
             {props.postsOnScreen.map((post: APost) => (
                 // eslint-disable-next-line react/jsx-key
                 <ul>
-                    <ADrawnPost drawnPost={post} />
+                    <ADrawnPost
+                        drawnPost={post}
+                        username={props.cookies.user.username}
+                    />
                 </ul>
                 /*
                 // eslint-disable-next-line react/jsx-key
