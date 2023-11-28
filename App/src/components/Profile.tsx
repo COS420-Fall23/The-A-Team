@@ -1,18 +1,22 @@
 import React, { useState, useEffect } from "react";
 import { useCookies } from "react-cookie";
+import { Modal, Button } from "react-bootstrap";
 import "../App.css";
 import CourseSearchPanel from "./CourseSearchPanel";
 
 interface Props {
     name: string;
+    anonMode: boolean;
+    setAnonMode: (boolean) => void;
 }
 
-const Profile: React.FC<Props> = ({ name }) => {
+const Profile: React.FC<Props> = ({ name, anonMode, setAnonMode }) => {
     const [cookies, setCookie] = useCookies(["emoji", "color"]);
     const [emoji, setEmoji] = useState("");
     const [color, setColor] = useState("");
-    const [isAnonymous, setIsAnonymous] = useState(true);
     const [selectedCourses, setSelectedCourses] = useState<string[]>([]);
+    const [showModal, setShowModal] = useState(false);
+    const [pendingCourse, setPendingCourse] = useState("");
 
     const addCourse = (course) => {
         if (!selectedCourses.includes(course)) {
@@ -32,7 +36,17 @@ const Profile: React.FC<Props> = ({ name }) => {
     };
 
     const handleCourseClick = (courseName: string) => {
-        setSelectedCourses((prevCourses) => [...prevCourses, courseName]);
+        setPendingCourse(courseName);
+        setShowModal(true);
+    };
+
+    const confirmAddCourse = () => {
+        if (!selectedCourses.includes(pendingCourse)) {
+            setSelectedCourses([...selectedCourses, pendingCourse]);
+        } else {
+            console.log("This course has already been selected.");
+        }
+        setShowModal(false);
     };
 
     const getRandomEmoji = () => {
@@ -63,16 +77,33 @@ const Profile: React.FC<Props> = ({ name }) => {
     return (
         <div id="profile">
             <CourseSearchPanel onCourseClick={handleCourseClick} />
+            <Modal show={showModal} onHide={() => setShowModal(false)}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Add Course</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Do you want to add {pendingCourse}?</Modal.Body>
+                <Modal.Footer>
+                    <Button
+                        variant="secondary"
+                        onClick={() => setShowModal(false)}
+                    >
+                        No
+                    </Button>
+                    <Button variant="primary" onClick={confirmAddCourse}>
+                        Yes
+                    </Button>
+                </Modal.Footer>
+            </Modal>
             <div>
                 <h2>Selected Courses:</h2>
                 <div id="num-courses">{selectedCourses.length}</div>
                 {selectedCourses.map((course, index) => (
-                    <p key={index}>{course}</p>
+                    <p key={index} className="course">
+                        {course}
+                    </p>
                 ))}
             </div>
-            <h2>
-                {isAnonymous ? "You are anonymous" : "You are not anonymous"}
-            </h2>
+            <h2>{anonMode ? "You are anonymous" : "You are not anonymous"}</h2>
             <div
                 style={{
                     backgroundColor: color,
@@ -112,8 +143,8 @@ const Profile: React.FC<Props> = ({ name }) => {
                 type="checkbox"
                 id="anonymous"
                 name="anonymous"
-                onChange={() => setIsAnonymous(!isAnonymous)}
-                checked={isAnonymous}
+                onChange={() => setAnonMode(!anonMode)}
+                checked={anonMode}
             />
             <label htmlFor="anonymous">Anonymous</label>
         </div>
