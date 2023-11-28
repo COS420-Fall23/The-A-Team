@@ -6,7 +6,7 @@
 4.    [Architectural Design Specification](https://docs.google.com/document/d/1ZvaReG9MMKDv57G5W7PK3SSKtc9Opg1J5jKssuVKim8/edit) 
 5.    [Use Case Diagrams and Descriptions](https://docs.google.com/document/d/1HVZJPOMEdF5vOeHxHVoEccG2ijHisyy4y0z5xDaOSBI/edit?usp=sharing)
 6.    [Sequence Diagrams](https://docs.google.com/document/d/1AqOGzRBFhIDMTtA0zzwFhM9aTngDF8fq4TNKDqYmBdo/edit#heading=h.87ewkvt0kdx) 
-7.    [Detalied Technical Design Document (Class Diagram Included)](https://miro.com/app/board/uXjVNQ1KWrU=/?share_link_id=218485857531) 
+7.    [Detailed Technical Design Document](https://docs.google.com/document/d/1C1oSrq1omt9Ru1VaULNxfUHpezDwVSfzlUy09scPhJU/edit?usp=sharing) 
 8.    [Sprint Review](https://docs.google.com/document/d/1sEG4tHyaM308Pf25dQfIqN7FTaIKvIIHpUIT_Ac5u9Y/edit)
 9.    [GitHub Repo](https://github.com/COS420-Fall23/The-A-Team)
 10.    [Walkthrough Video](https://drive.google.com/drive/folders/1JIdEB4qRwWEuTZIU7XUBS_fK9qSBbIvh?usp=share_link) 
