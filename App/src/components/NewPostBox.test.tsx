@@ -21,10 +21,8 @@ describe('NewPostBox', () => {
     it('updates new post title on input change', () => {
         const { getByTestId } = render(<NewPostBox />);
         fireEvent.click(getByTestId('startNewPostButton'));
-        const titleInput = getByTestId('newPostTitleBox');
+        const titleInput = getByTestId('newPostTitleBox') as HTMLInputElement;
         fireEvent.change(titleInput, { target: { value: 'New Title' } });
         expect(titleInput.value).toBe('New Title');
-    });
-
-    // Additional tests for the new post class and text inputs, and publish functionality
+    });    
 });

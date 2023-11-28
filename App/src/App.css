@@ -291,19 +291,11 @@ body{
   width: fit-content;
   padding:0.5em;
 }
-.modal-footer-centered {
-  display: flex;
-  justify-content: center;
-}
-.course {
-  font-size: 1.25em;
-  font-weight: bold;
-  background-color: #61dafb;
-  border-radius: 0.5em;
-  padding: 1em 1em;
-  margin: 0 auto;
-  margin-top: 1.5%;
-  display: table;
-  width: 1%; 
-  white-space: nowrap; 
+
+.faq{
+  background-color: #6767ff;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
 }
