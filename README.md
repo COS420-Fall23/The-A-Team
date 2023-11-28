@@ -110,5 +110,4 @@ Zoom: For the agreed-upon synchronous working slots, and various scrums/meetings
 JetBrains Spaces: For project management, task allocation, and tracking.
 Google Drive: For document creation and sharing.
 
-
 --------------------
