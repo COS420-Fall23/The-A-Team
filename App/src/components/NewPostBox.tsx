@@ -27,6 +27,7 @@ function NewPostBox(props) {
             ) : (
                 <div>
                     <input
+                        id="postBox"
                         data-testid="newPostTextBox"
                         type="text"
                         size={50}
