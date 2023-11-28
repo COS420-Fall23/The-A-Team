@@ -39,7 +39,7 @@ test("edit button click sets editing state", () => {
         body: "Cant print hello world"
     };
     const { queryByRole, getByTestId } = render(
-        <ADrawnPost username="JohnDoe" drawnPost={drawnPost} />
+        <ADrawnPost username="Johnny" drawnPost={drawnPost} />
     );
 
     const editButton = queryByRole("button", { name: "EditPost" });
@@ -60,7 +60,7 @@ test("accept changes button functionality", () => {
     };
     const { queryByRole } = render(
         <ADrawnPost
-            username="JohnDoe"
+            username="Johny"
             drawnPost={drawnPost}
             setAPost={mockSetAPost}
             postsOnScreen={[]}
