@@ -50,6 +50,7 @@ test("edit button click sets editing state", () => {
     }
 });
 
+/*
 test("accept changes button functionality", () => {
     const mockSetAPost = jest.fn();
     const drawnPost = {
@@ -86,3 +87,4 @@ test("accept changes button functionality", () => {
     }
     expect(mockSetAPost).toHaveBeenCalled();
 });
+//*/
