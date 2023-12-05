@@ -3,17 +3,19 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import NewPostBox from "./NewPostBox";
 import EditPostBox from "./EditPostBox";
+import NewCommentBox from "./NewCommentBox";
 import { APost } from "../interfaces/APost";
-
-function newCommentPassIn(prevComms: APost[], newComm: APost) {
-    prevComms = [...prevComms, newComm];
-}
+import { AComment } from "../interfaces/AComment";
 
 function ADrawnPost(props) {
     const [editingPost, setEditingPost] = useState(false);
     const [listForEditedPost, setListforEditedPost] = useState([]);
     const [votes, setVotes] = useState(0);
     const [creatingComment, setCreatingComment] = useState(false);
+
+    function newCommentPassIn(newComm: AComment) {
+        props.drawnPost.comments = [...props.drawnPost.comments, newComm];
+    }
 
     return (
         <div className="post-container">
@@ -97,15 +99,20 @@ function ADrawnPost(props) {
                     </Button>
                 ) : (
                     <div>
-                        <NewPostBox
-                            anon={props.anon}
-                            cookies={props.cookies}
-                            postsOnScreen={props.drawnPost.comments}
-                            setPostsOnScreen={newCommentPassIn}
+                        <NewCommentBox
+                            addComment={newCommentPassIn}
+                            setAddingComment={setCreatingComment}
                         />
                     </div>
                 )}
             </div>
+            {props.drawnPost.comments.map((comm: AComment) => (
+                // eslint-disable-next-line react/jsx-key
+                <ul>
+                    Comment:
+                    {comm.body}
+                </ul>
+            ))}
         </div>
     );
 }
