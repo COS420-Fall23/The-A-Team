@@ -3,4 +3,5 @@ export interface APost {
     course: string;
     title: string;
     body: string;
+    comments: APost[];
 }

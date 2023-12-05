@@ -18,7 +18,8 @@ function NewPostBox(props) {
             author: props.anon ? "BananaMan" : props.cookies.user.username,
             course: newPostClass,
             title: newPostTitle,
-            body: newPostText
+            body: newPostText,
+            comments: []
         };
 
         props.setPostsOnScreen([...props.postsOnScreen, newPost]);
