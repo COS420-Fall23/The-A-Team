@@ -14,14 +14,14 @@ COS 420 - Fall 2023 - Team A Project Repository
 
 # Team Members
 
-| Role            | First  | Last     |
-| --------------- | ------ | -------- |
-| Project Manager | Andrew | Bement   |
-| Designer        | Emily  | Brule    |
-| Developer       | Samson | Cournane |
-| Designer        | Tereza | Holubcova|
-| Developer       | Kevin  | Menello  |
-| Developer       | Samuel | Minor    |
+| Role            | First  | Last       |
+| --------------- | ------ | ---------- |
+| Project Manager | Andrew | Bement     |
+| Designer        | Emily  | Brule      |
+| Developer       | Samson | Cournane   |
+| Designer        | Tereza | Holubcova  |
+| Developer       | Kevin  | Menenello  |
+| Developer       | Samuel | Minor      |
 
 <br><br>
 
