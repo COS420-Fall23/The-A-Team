@@ -97,16 +97,6 @@ function LoginPanel(props) {
                     </div>
                 )}
             </div>
-            {props.cookies.user && (
-                <div id="help">
-                    <Help></Help>
-                    <Profile
-                        name={props.cookies.user.username}
-                        anonMode={props.anonMode}
-                        setAnonMode={props.setAnonMode}
-                    ></Profile>
-                </div>
-            )}
         </CookiesProvider>
     );
 }
