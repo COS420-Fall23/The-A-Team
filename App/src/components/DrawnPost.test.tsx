@@ -50,41 +50,21 @@ test("edit button click sets editing state", () => {
     }
 });
 
-/*
-test("accept changes button functionality", () => {
-    const mockSetAPost = jest.fn();
-    const drawnPost = {
-        author: "Johnny",
-        course: "COS123",
-        title: "Python Class",
-        body: "Cant print hello world"
-    };
-    const { queryByRole } = render(
-        <ADrawnPost
-            username="Johny"
-            drawnPost={drawnPost}
-            setAPost={mockSetAPost}
-            postsOnScreen={[]}
-            // eslint-disable-next-line @typescript-eslint/no-empty-function
-            setPostsOnScreen={() => {}}
-        />
-    );
-    //pretend (simulated)
-    const editButton = queryByRole("button", { name: "EditPost" });
-    if (editButton) {
-        fireEvent.click(editButton);
-    } else {
-        throw new Error("Edit button not found");
-    }
-
-    const acceptChangesButton = queryByRole("button", {
-        name: "AcceptChanges"
+/*describe("ADrawnPost", () => {
+    test("increments vote on upvote click", () => {
+        const { getByText } = render(
+            <ADrawnPost /* pass required props here  />
+        );
+        const upvoteButton = getByText("Upvote");
+        fireEvent.click(upvoteButton);
+        expect(getByText("Votes: 1")).toBeInTheDocument();
     });
-    if (acceptChangesButton) {
-        fireEvent.click(acceptChangesButton);
-    } else {
-        throw new Error("Accept changes button not found");
-    }
-    expect(mockSetAPost).toHaveBeenCalled();
+
+    test("decrements vote on downvote click", () => {
+        const { getByText } = render(<ADrawnPost />);
+        const downvoteButton = getByText("Downvote");
+        fireEvent.click(downvoteButton);
+        expect(getByText("Votes: -1")).toBeInTheDocument();
+    });
 });
-//*/
+*/
