@@ -7,9 +7,10 @@ import EditPostBox from "./EditPostBox";
 function ADrawnPost(props) {
     const [editingPost, setEditingPost] = useState(false);
     const [listForEditedPost, setListforEditedPost] = useState([]);
+    const [votes, setVotes] = useState(0);
 
     return (
-        <div>
+        <div className="post-container">
             <div id="aDrawnPostEditButtonDiv">
                 {props.username == props.drawnPost.author ? (
                     <Button
@@ -23,19 +24,30 @@ function ADrawnPost(props) {
                     <div>Not Author</div>
                 )}
             </div>
-            <div>
+            <div className="post-content">
                 {!editingPost ? (
                     <div>
-                        <div id="aDrawnPostAuthorDiv">
+                        <div id="aDrawnPostAuthorDiv" className="post-author">
                             {props.drawnPost.author}
                         </div>
-                        <div id="aDrawnPostCourseDiv">
+                        <div id="aDrawnPostCourseDiv" className="post-course">
                             {props.drawnPost.course}
                         </div>
-                        <div id="aDrawnPostTitleDiv">
+                        <div id="aDrawnPostTitleDiv" className="post-title">
                             {props.drawnPost.title}
                         </div>
-                        <div id="aDrawnPostBodyDiv">{props.drawnPost.body}</div>
+                        <div id="aDrawnPostBodyDiv" className="">
+                            {props.drawnPost.body}
+                        </div>
+                        <div>
+                            <button onClick={() => setVotes(votes + 1)}>
+                                Upvote
+                            </button>
+                            <button onClick={() => setVotes(votes - 1)}>
+                                Downvote
+                            </button>
+                            <p>Votes: {votes}</p>
+                        </div>
                     </div>
                 ) : (
                     <div>
