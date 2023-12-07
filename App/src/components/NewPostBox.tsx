@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { APost } from "../interfaces/APost";
+import "../App.css";
 
 function NewPostBox(props) {
     const [writingNewPost, setWritingNewPost] = useState(false);
@@ -28,7 +29,7 @@ function NewPostBox(props) {
     }
 
     return (
-        <div>
+        <div className="new-post-container">
             {!writingNewPost ? (
                 <Button
                     data-testid="startNewPostButton"
