@@ -40,13 +40,13 @@ function WelcomePage(props): JSX.Element {
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload.
             </p>
+            {/*
             <NewPostBox
                 anon={anonMode}
                 cookies={props.cookies}
                 postsOnScreen={postsOnScreen}
                 setPostsOnScreen={setPostsOnScreen}
             ></NewPostBox>
-            {/*<PostsList postsOnScreen={postsOnScreen}></PostsList>*/}
             <PostsBox
                 postsOnScreen={postsOnScreen}
                 setPostsOnScreen={setPostsOnScreen}
@@ -54,6 +54,7 @@ function WelcomePage(props): JSX.Element {
                 anon={anonMode}
                 setAPost={SetAPost}
             ></PostsBox>
+            //*/}
         </div>
     );
 }
