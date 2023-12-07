@@ -19,14 +19,14 @@ function NewCommentBox(props) {
             <div>
                 Post Text Box
                 <input
-                    data-testid="newPostTextBox"
+                    data-testid="newCommentTextBox"
                     type="text"
                     size={50}
                     onChange={(e) => setNewCommentText(e.target.value)}
                 />
             </div>
             <Button
-                data-testid="newPostSubmitButton"
+                data-testid="newCommentSubmitButton"
                 onClick={() => publishComment()}
             >
                 Publish
