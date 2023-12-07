@@ -15,7 +15,8 @@ function SetAPost(
     newPost: APost,
     index: number
 ) {
-    const newPostArray = postsOnScreen.splice(index, 1, newPost);
+    const newPostArray = [...postsOnScreen];
+    newPostArray.splice(index, 1, newPost);
     setPostsOnScreen(newPostArray);
 }
 

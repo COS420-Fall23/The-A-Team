@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import NewPostBox from "./NewPostBox";
+import EditPostBox from "./EditPostBox";
 
 function ADrawnPost(props) {
     const [editingPost, setEditingPost] = useState(false);
@@ -38,11 +39,15 @@ function ADrawnPost(props) {
                     </div>
                 ) : (
                     <div>
-                        <NewPostBox
+                        <EditPostBox
                             anon={props.anon}
                             cookies={props.cookies}
                             postsOnScreen={listForEditedPost}
                             setPostsOnScreen={setListforEditedPost}
+                            editMode={true}
+                            editText={props.drawnPost.body}
+                            editTitle={props.drawnPost.title}
+                            editClass={props.drawnPost.course}
                         />
                         <Button
                             onClick={() => {
