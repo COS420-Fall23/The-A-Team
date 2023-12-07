@@ -4,16 +4,20 @@ import WelcomePage from "./WelcomePage.tsx";
 import { /*Cookies,*/ useCookies } from "react-cookie";
 //import { User } from "./interfaces/User.ts";
 //import { User } from "./interfaces/User.js";
+import Navbar from "./components/Navbar.tsx";
 
 function App() {
     const [cookies, setCookie, removeCookie] = useCookies(["user"]);
 
     return (
-        <WelcomePage
-            cookies={cookies}
-            setCookie={setCookie}
-            removeCookie={removeCookie}
-        ></WelcomePage>
+        <>
+            <Navbar />
+            <WelcomePage
+                cookies={cookies}
+                setCookie={setCookie}
+                removeCookie={removeCookie}
+            ></WelcomePage>
+        </>
     );
 }
 
