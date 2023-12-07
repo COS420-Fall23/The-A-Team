@@ -45,7 +45,6 @@ In order to run the web app locally, follow these steps.
 
 You can either use vscode to help with this, or just through the standard terminal.
 
-
 Getting the code by cloning through VSCode:
 1. Open a new VSCode window so that you see the start page. 
 2. Locate and click the 'Clone Git Repository' link on the page
