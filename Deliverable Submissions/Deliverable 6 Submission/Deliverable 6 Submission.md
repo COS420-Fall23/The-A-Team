@@ -10,7 +10,7 @@
 8.    [Detailed Technical Design Document](https://docs.google.com/document/d/1C1oSrq1omt9Ru1VaULNxfUHpezDwVSfzlUy09scPhJU/edit?usp=sharing) 
 9.    [Sprint Review](https://docs.google.com/document/d/1sEG4tHyaM308Pf25dQfIqN7FTaIKvIIHpUIT_Ac5u9Y/edit)
 10.    [GitHub Repo](https://github.com/COS420-Fall23/The-A-Team)
-11.    [Walkthrough Video](https://drive.google.com/drive/folders/1JIdEB4qRwWEuTZIU7XUBS_fK9qSBbIvh?usp=share_link) 
+11.    [Walkthrough Video](https://drive.google.com/drive/folders/1JIdEB4qRwWEuTZIU7XUBS_fK9qSBbIvh?usp=share_link) (See Final Project Video for a Walkthrough of Deliverable 6's progress)
 12.    ~~Focus Group / Usability Testing Documents and Results~~
 13.    Kanban Board
        - [Kanban Progress Photos](https://github.com/COS420-Fall23/The-A-Team/tree/main/Deliverable%20Submissions/Team%20Kanban%20Board%20Updates)
